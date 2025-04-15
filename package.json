@@ -5,8 +5,11 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
+  "homepage": "https://sttern.github.io/graphing-calculator",
   "dependencies": {
     "mathjs": "^12.4.2",
     "react": "^18.2.0",
@@ -19,6 +22,7 @@
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.24",
     "tailwindcss": "^3.4.1",
-    "vite": "^5.0.0"
+    "vite": "^5.0.0",
+    "gh-pages": "^4.0.0"
   }
 }
